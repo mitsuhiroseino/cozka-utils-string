@@ -1,6 +1,6 @@
 {
   "name": "@cozka/utils-string",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "keywords": [
     "string"
   ],
@@ -20,7 +20,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@cozka/utils-array": "^0.1.0",
+    "@cozka/utils-array": "^0.1.1",
     "lodash-es": "^4.17.21"
   },
   "devDependencies": {
@@ -57,7 +57,7 @@
     "rollup": "^3.26.0",
     "rollup-plugin-copy": "^3.5.0",
     "rollup-plugin-sass": "^1.15.2",
-    "ts-jest": "^29.1.0",
+    "ts-jest": "^29.3.0",
     "tslib": "^2.5.0",
     "tsx": "^4.19.2",
     "type-fest": "^4.34.1",

@@ -1,9 +1,9 @@
-import { ReplacementMap, TransformOptions } from '../transform';
+import { TransformOptions } from '../transform';
 
 /**
- * standardize関数のオプション
+ * normalize関数のオプション
  */
-export type StandardizeOptions = {
+export type NormalizeOptions = {
   /**
    * 値がnullの場合に置き換える値
    */

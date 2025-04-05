@@ -1,4 +1,4 @@
-import standardize from '../standardize';
+import normalize from '../normalize';
 import { IsEqualOptions } from './types';
 
 /**
@@ -8,18 +8,26 @@ import { IsEqualOptions } from './types';
  * @param options オプション
  * @returns
  */
-export default function isEqual(value1: string, value2: string, options: IsEqualOptions = {}): boolean {
-  const { noStandardizationForValue1, noStandardizationForValue2, ...rest } = options;
+export default function isEqual(
+  value1: string,
+  value2: string,
+  options: IsEqualOptions = {},
+): boolean {
+  const {
+    noNormalizationForValue1: noStandardizationForValue1,
+    noNormalizationForValue2: noStandardizationForValue2,
+    ...rest
+  } = options;
   let targetValue1 = value1;
   let targetValue2 = value2;
 
   if (noStandardizationForValue1) {
-    // 値1を標準化
-    targetValue1 = standardize(value1, rest);
+    // 値1を正規化
+    targetValue1 = normalize(value1, rest);
   }
   if (noStandardizationForValue1) {
-    // 値2を標準化
-    targetValue2 = standardize(value2, rest);
+    // 値2を正規化
+    targetValue2 = normalize(value2, rest);
   }
 
   // 比較

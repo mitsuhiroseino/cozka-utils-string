@@ -1,16 +1,16 @@
-import { StandardizeOptions } from '../standardize';
+import { NormalizeOptions } from '../normalize';
 
 /**
  * オプション
  */
-export type IsEqualOptions = StandardizeOptions & {
+export type IsEqualOptions = NormalizeOptions & {
   /**
-   * 値1の標準化を行わない
+   * 値1の正規化を行わない
    */
-  noStandardizationForValue1?: boolean;
+  noNormalizationForValue1?: boolean;
 
   /**
-   * 値2の標準化を行わない
+   * 値2の正規化を行わない
    */
-  noStandardizationForValue2?: boolean;
+  noNormalizationForValue2?: boolean;
 };

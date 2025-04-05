@@ -1,16 +1,16 @@
 import transform, { TransformationType } from '../transform';
 import { TRANSFORMATION_TYPES } from '../transform/constants';
-import { StandardizeOptions } from './types';
+import { NormalizeOptions } from './types';
 
 /**
- * 比較用に文字列の標準化を行う
+ * 比較用に文字列の正規化を行う
  * @param value 文字列
  * @param options オプション
- * @returns 標準化された文字列
+ * @returns 正規化された文字列
  */
-export default function standardize(
+export default function normalize(
   value: string,
-  options: StandardizeOptions = {},
+  options: NormalizeOptions = {},
 ): string {
   if (value) {
     // 文字列あり
